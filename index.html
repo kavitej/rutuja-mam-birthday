@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Birthday Rutuja Ma’am</title>
+    <meta
+      name="description"
+      content="A premium birthday tribute for Rutuja Ma’am, crafted with gratitude and admiration."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@300;400;500;600;700&family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <canvas id="particle-canvas" aria-hidden="true"></canvas>
+    <audio id="bgMusic" loop preload="auto" playsinline aria-hidden="true">
+      <source
+        src="https://www.orangefreesounds.com/wp-content/uploads/2016/08/Happy-birthday-instrumental.mp3"
+        type="audio/mpeg"
+      />
+    </audio>
+
+    <!-- Cinematic intro overlay -->
+    <div class="intro-screen" id="introScreen" aria-live="polite">
+      <div class="intro-content glass-panel">
+        <p class="intro-kicker">A tribute with gratitude</p>
+        <div class="typing-lines">
+          <p class="typing-line" id="line1"></p>
+          <p class="typing-line" id="line2"></p>
+          <p class="typing-line" id="line3"></p>
+        </div>
+        <h1 class="intro-reveal" id="finalReveal">Happy Birthday Rutuja Ma’am 🎉</h1>
+      </div>
+    </div>
+
+    <!-- Floating audio control -->
+    <button class="music-toggle glass-panel" id="musicToggle" type="button" aria-pressed="false">
+      <span class="music-icon" id="musicIcon">▶</span>
+      <span id="musicLabel">Music Off</span>
+    </button>
+
+    <p class="tap-hint glass-panel" id="tapHint" aria-live="polite">
+      Tap anywhere to start experience 🎵
+    </p>
+
+    <main class="page-shell" id="pageShell">
+      <!-- Hero section -->
+      <section class="hero section" id="hero">
+        <div class="hero-backdrop"></div>
+        <div class="hero-layout">
+          <div class="hero-copy reveal" data-parallax="0.12">
+            <p class="eyebrow">For someone who shaped more than lessons</p>
+            <h2>To the Mentor Who Makes the Impossible Feel Achievable</h2>
+            <p class="hero-text">
+              Some guidance gives direction. Yours gave clarity, courage, and the confidence to
+              believe that growth is possible even in uncertain moments. Thank you for leading with
+              wisdom, patience, and a belief that quietly transforms effort into progress.
+            </p>
+            <a class="hero-link" href="#messageCard">Read the tribute</a>
+          </div>
+
+          <div class="hero-ornament reveal" data-parallax="-0.08" aria-hidden="true">
+            <div class="orbit-ring orbit-one"></div>
+            <div class="orbit-ring orbit-two"></div>
+            <div class="glow-core"></div>
+            <div class="quote-panel glass-panel">
+              <span class="quote-mark">“</span>
+              <p>Grace in guidance. Strength in belief. Excellence in impact.</p>
+            </div>
+          </div>
+        </div>
+        <div class="scroll-indicator reveal">
+          <span></span>
+          <p>Scroll to continue</p>
+        </div>
+      </section>
+
+      <!-- Interactive message card -->
+      <section class="section message-section" id="messageCard">
+        <div class="section-heading reveal">
+          <p class="eyebrow">A message from the heart</p>
+          <h3>Every milestone felt lighter because your support was there before the success was.</h3>
+        </div>
+
+        <div class="message-card-wrap reveal">
+          <button class="open-message-btn" id="openMessageBtn" type="button">
+            Open Message
+          </button>
+
+          <div class="flip-scene" id="flipScene">
+            <article class="flip-card">
+              <div class="card-face card-front">
+                <div class="card-surface glass-panel">
+                  <div class="card-glow"></div>
+                  <p class="card-label">A note of gratitude</p>
+                  <h4>For the mentor who made hard things feel possible</h4>
+                  <p>
+                    Click to unfold a message shaped by appreciation, respect, and the impact of
+                    your guidance.
+                  </p>
+                </div>
+              </div>
+
+              <div class="card-face card-back">
+                <div class="card-surface glass-panel">
+                  <div class="card-glow"></div>
+                  <p class="card-label">With deepest respect</p>
+                  <p>
+                    Thank you for your mentorship, for thoughtful project guidance, for standing by
+                    us during placement preparation, and for offering motivation exactly when
+                    confidence felt fragile.
+                  </p>
+                  <p>
+                    Your belief has never been loud, but it has always been powerful. It helped turn
+                    hesitation into action, and effort into a path forward.
+                  </p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Animated journey timeline -->
+      <section class="section timeline-section">
+        <div class="section-heading reveal">
+          <p class="eyebrow">A journey shaped by your influence</p>
+          <h3>From first guidance to a stronger future, your role has been present in every step.</h3>
+        </div>
+
+        <div class="timeline reveal">
+          <div class="timeline-track"></div>
+          <div class="timeline-item">
+            <div class="timeline-icon">01</div>
+            <h4>First Meeting</h4>
+            <p>The beginning of a connection built on trust and learning.</p>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-icon">02</div>
+            <h4>Guidance</h4>
+            <p>Direction arrived with clarity, patience, and calm reassurance.</p>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-icon">03</div>
+            <h4>Growth</h4>
+            <p>Challenges turned into opportunities through your mentorship.</p>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-icon">04</div>
+            <h4>Confidence</h4>
+            <p>Belief grew stronger because you taught us to trust the process.</p>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-icon">05</div>
+            <h4>Success Path</h4>
+            <p>Every future goal now feels more achievable because of your impact.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Appreciation highlights -->
+      <section class="section highlight-section">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Qualities that stay with us</p>
+          <h3>The reason your presence is remembered long after the lesson ends.</h3>
+        </div>
+
+        <div class="highlight-grid">
+          <article class="highlight-card glass-panel reveal">
+            <span class="highlight-index">01</span>
+            <h4>Mentor</h4>
+            <p>You made learning feel elevated, purposeful, and deeply human.</p>
+          </article>
+          <article class="highlight-card glass-panel reveal">
+            <span class="highlight-index">02</span>
+            <h4>Guide</h4>
+            <p>Your advice gave direction when uncertainty was louder than clarity.</p>
+          </article>
+          <article class="highlight-card glass-panel reveal">
+            <span class="highlight-index">03</span>
+            <h4>Leader</h4>
+            <p>You led by example, showing strength through consistency and grace.</p>
+          </article>
+          <article class="highlight-card glass-panel reveal">
+            <span class="highlight-index">04</span>
+            <h4>Inspiration</h4>
+            <p>Your belief in students creates confidence that continues far beyond the classroom.</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Closing signature section -->
+      <footer class="section footer-section">
+        <div class="closing-panel glass-panel reveal">
+          <p class="closing-line">Not just a teacher, but a guiding force.</p>
+          <div class="signature-block">
+            <p class="signature-label">Wished by:</p>
+            <p class="signature-text">Kavitej Vakte</p>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
